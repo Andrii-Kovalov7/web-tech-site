@@ -11,7 +11,7 @@
     <img src="../images/logo.svg" alt="Логотип сайта" class="logo">
     <nav>
       <a href="../index.html">Головна</a>
-      <a href="about.html">Про сайт</a>
+      <a href="about.html" aria-current="page">Про сайт</a>
       <a href="quiz.html">Квіз</a>
     </nav>
     <button id="themeButton" class="btn theme-btn" type="button">Темна тема</button>
@@ -19,12 +19,49 @@
   <main>
     <h1>Про сайт</h1>
     <p>Сайт створено в межах курсу вебтехнологій як підсумковий навчальний проєкт. Це статичний сайт: три сторінки, спільний файл стилів і один файл JavaScript без залежностей.</p>
-    <h2>Структура</h2>
-    <p>Головна сторінка містить опис проєкту, картки з розділами і форму зворотного зв'язку. Сторінка про сайт пояснює структуру і технології. Сторінка квіза має чотири запитання з перевіркою відповідей у браузері.</p>
-    <h2>Технології</h2>
-    <p>Розмітку і семантичну структуру зроблено на HTML5. Оформлення зібрано в одному файлі css/style.css: світла і темна палітри, сітка карток, адаптивні правила для вузьких екранів. Тема оформлення перемикається класом dark і зберігається в localStorage браузера. Форму і квіз обслуговує js/main.js.</p>
-    <h2>Перегляд локально</h2>
-    <p>Щоб відкрити сайт на комп'ютері, у папці з файлами виконайте python3 -m http.server 8000 і відкрийте адресу http://localhost:8000.</p>
+    <section>
+      <h2>Для кого</h2>
+      <p>Для тих, хто починає вивчати веброзробку. Сайт коротко показує, за що відповідають HTML, CSS і JavaScript, і дає змогу перевірити себе в квізі.</p>
+    </section>
+    <section>
+      <h2>Структура</h2>
+      <table class="pages-table">
+        <thead>
+          <tr>
+            <th scope="col">Сторінка</th>
+            <th scope="col">Що містить</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="../index.html">Головна</a></td>
+            <td>Опис проєкту, картки HTML, CSS і JavaScript, розкривний блок і демонстраційна форма зворотного зв'язку.</td>
+          </tr>
+          <tr>
+            <td><a href="about.html">Про сайт</a></td>
+            <td>Призначення, структура, технології та публікація сайта.</td>
+          </tr>
+          <tr>
+            <td><a href="quiz.html">Квіз</a></td>
+            <td>Чотири запитання з перевіркою відповідей у браузері.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Технології</h2>
+      <ul class="tech-list">
+        <li><strong>HTML5:</strong> семантичні теги header, nav, main, section, article і footer, форми з label, fieldset і legend.</li>
+        <li><strong>CSS3:</strong> один файл css/style.css, сітка карток на flexbox, медіазапит для екранів до 600 пікселів, переходи transition, анімація keyframes, object-fit для зображень, світла і темна палітри.</li>
+        <li><strong>JavaScript:</strong> js/main.js перемикає тему і зберігає вибір у localStorage, перевіряє форму і рахує результат квіза.</li>
+        <li><strong>Зображення:</strong> власні ілюстрації у форматі WebP і логотип у форматі SVG.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Публікація</h2>
+      <p>Сайт розміщено на GitHub Pages за адресою <a href="https://andrii-kovalov7.github.io/web-tech-site/">andrii-kovalov7.github.io/web-tech-site</a>, вихідний код відкритий у репозиторії <a href="https://github.com/Andrii-Kovalov7/web-tech-site">github.com/Andrii-Kovalov7/web-tech-site</a>.</p>
+      <p>Щоб переглянути сайт локально, у папці з файлами виконайте <code>python3 -m http.server 8000</code> і відкрийте адресу <code>http://localhost:8000</code>.</p>
+    </section>
   </main>
   <script src="../js/main.js"></script>
   <footer>

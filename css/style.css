@@ -32,9 +32,11 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
-.icon {
-  width: 18px;
-  height: 18px;
+nav a[aria-current="page"] {
+  color: #f1c40f;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
 }
 
 main {
@@ -148,23 +150,6 @@ footer {
   color: #777;
 }
 
-.contacts {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 24px;
-  margin-bottom: 8px;
-}
-
-.contacts a,
-.contacts span {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: #555;
-  text-decoration: none;
-}
-
 .theme-btn {
   margin-left: auto;
 }
@@ -180,9 +165,7 @@ body.dark .card {
 }
 
 body.dark .card p,
-body.dark footer,
-body.dark .contacts a,
-body.dark .contacts span {
+body.dark footer {
   color: #9aa7b3;
 }
 
@@ -245,6 +228,21 @@ body.dark .banner {
   color: #27ae60;
 }
 
+.demo-note {
+  margin: 0 0 16px;
+  padding: 10px 14px;
+  border-left: 4px solid #f1c40f;
+  border-radius: 4px;
+  background: #fdf8e4;
+  color: #555;
+  font-size: 14px;
+}
+
+body.dark .demo-note {
+  background: #2a3340;
+  color: #9aa7b3;
+}
+
 body.dark .feedback {
   background: #243140;
   border-color: #34495e;
@@ -299,6 +297,71 @@ body.dark .quiz {
 
 body.dark .quiz fieldset {
   border-color: #34495e;
+}
+
+main a {
+  color: #2c6fb0;
+}
+
+.pages-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+  border: 1px solid #e1e8ee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pages-table th,
+.pages-table td {
+  padding: 10px 14px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #e1e8ee;
+}
+
+.pages-table td:first-child {
+  white-space: nowrap;
+}
+
+.pages-table th {
+  background: #2c3e50;
+  color: #ecf0f1;
+  font-weight: normal;
+}
+
+.pages-table tr:last-child td {
+  border-bottom: none;
+}
+
+.tech-list {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+code {
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: #eef2f5;
+  font-size: 0.95em;
+}
+
+body.dark main a {
+  color: #7fb8e6;
+}
+
+body.dark .pages-table {
+  background: #243140;
+  border-color: #34495e;
+}
+
+body.dark .pages-table td {
+  border-color: #34495e;
+}
+
+body.dark code {
+  background: #243140;
 }
 
 @media (max-width: 600px) {

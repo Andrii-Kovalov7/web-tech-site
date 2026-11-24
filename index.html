@@ -10,7 +10,7 @@
   <header>
     <img src="images/logo.svg" alt="Логотип сайта" class="logo">
     <nav>
-      <a href="index.html">Головна</a>
+      <a href="index.html" aria-current="page">Головна</a>
       <a href="pages/about.html">Про сайт</a>
       <a href="pages/quiz.html">Квіз</a>
     </nav>
@@ -46,6 +46,7 @@
     </div>
     <section class="feedback">
       <h2>Зворотний зв'язок</h2>
+      <p class="demo-note">Демонстраційна форма: поля перевіряються в браузері, але повідомлення нікуди не надсилається і ніде не зберігається.</p>
       <form id="feedbackForm" novalidate>
         <label>Ім'я
           <input type="text" id="nameInput" placeholder="Як вас звати">
@@ -63,9 +64,6 @@
   </main>
   <script src="js/main.js"></script>
   <footer>
-    <div class="contacts">
-      <a href="mailto:student@example.com">student@example.com</a>
-    </div>
     <p>2026, навчальний проєкт.</p>
   </footer>
 </body>

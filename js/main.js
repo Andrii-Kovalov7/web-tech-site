@@ -58,7 +58,7 @@ if (form && formMessage) {
       return;
     }
 
-    showFormMessage("Дякуємо, " + name + "! Повідомлення збережено локально.", "success");
+    showFormMessage("Дякуємо, " + name + "! Поля заповнено правильно. Це демонстраційна форма, тому повідомлення нікуди не надіслано.", "success");
     form.reset();
   });
 }
