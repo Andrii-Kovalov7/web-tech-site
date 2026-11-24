@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Квіз</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <img src="../images/logo.svg" alt="Логотип сайта" class="logo">
+    <nav>
+      <a href="../index.html">Головна</a>
+      <a href="about.html">Про сайт</a>
+      <a href="quiz.html">Квіз</a>
+    </nav>
+    <button id="themeButton" class="btn theme-btn" type="button">Темна тема</button>
+  </header>
+  <main>
+    <h1>Квіз з основ вебтехнологій</h1>
+    <p>Чотири запитання, по одній правильній відповіді. Результат рахує JavaScript, нікуди ніщо не надсилається.</p>
+    <form id="quizForm" class="quiz" novalidate>
+      <fieldset>
+        <legend>1. Який тег використовується для основного заголовка сторінки?</legend>
+        <label><input type="radio" name="q1" value="a"> div</label>
+        <label><input type="radio" name="q1" value="b"> h1</label>
+        <label><input type="radio" name="q1" value="c"> span</label>
+      </fieldset>
+      <fieldset>
+        <legend>2. Яка властивість CSS змінює колір тексту?</legend>
+        <label><input type="radio" name="q2" value="a"> background</label>
+        <label><input type="radio" name="q2" value="b"> font</label>
+        <label><input type="radio" name="q2" value="c"> color</label>
+      </fieldset>
+      <fieldset>
+        <legend>3. Який формат підходить для простого логотипа, який можна масштабувати без втрати якості?</legend>
+        <label><input type="radio" name="q3" value="a"> SVG</label>
+        <label><input type="radio" name="q3" value="b"> GIF</label>
+        <label><input type="radio" name="q3" value="c"> TIFF</label>
+      </fieldset>
+      <fieldset>
+        <legend>4. Який атрибут вказує адресу, куди веде посилання?</legend>
+        <label><input type="radio" name="q4" value="a"> src</label>
+        <label><input type="radio" name="q4" value="b"> href</label>
+        <label><input type="radio" name="q4" value="c"> alt</label>
+      </fieldset>
+      <div class="quiz-actions">
+        <button class="btn" type="submit">Перевірити</button>
+        <button class="btn" type="button" id="quizReset">Спочатку</button>
+      </div>
+      <p id="quizResult" class="form-message" role="status"></p>
+    </form>
+  </main>
+  <script src="../js/main.js"></script>
+  <footer>
+    <p>2026, навчальний проєкт.</p>
+  </footer>
+</body>
+</html>

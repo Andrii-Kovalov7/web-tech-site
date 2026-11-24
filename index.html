@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мій сайт</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="Логотип сайта" class="logo">
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="pages/about.html">Про сайт</a>
+      <a href="pages/quiz.html">Квіз</a>
+    </nav>
+    <button id="themeButton" class="btn theme-btn" type="button">Темна тема</button>
+  </header>
+  <main>
+    <h1>Мій вебсайт</h1>
+    <p>Це навчальний проєкт з дисципліни вебтехнологій. Сторінки побудовано на HTML5, оформлює один файл CSS, частина елементів реагує на дії через JavaScript.</p>
+    <img src="images/banner.webp" alt="Робоче місце веброзробника: ноутбук з кодом, браузер і фотокартки" class="banner" width="1200" height="450">
+    <h2>Що тут є</h2>
+    <div class="cards">
+      <article class="card">
+        <img src="images/card_html.webp" alt="Аркуш документа з тегом HTML" width="600" height="450">
+        <h3>HTML</h3>
+        <p>Структура сторінок: заголовки, абзаци, навігація і зображення.</p>
+      </article>
+      <article class="card">
+        <img src="images/card_css.webp" alt="Браузерне вікно зі щіткою та палітрою фарб" width="600" height="450">
+        <h3>CSS</h3>
+        <p>Оформлення: кольори, відступи, сітка карток і адаптивність.</p>
+      </article>
+      <article class="card">
+        <img src="images/card_graphics.webp" alt="Фотокартки, камера та кольорові зразки" width="600" height="450">
+        <h3>JavaScript</h3>
+        <p>Дрібна інтерактивність: тема, квіз і перевірка форми. Без сервера.</p>
+      </article>
+    </div>
+    <div class="extra">
+      <button id="moreButton" class="btn" type="button">Детальніше про проєкт</button>
+      <div id="moreText" class="info">
+        Проєкт складається з трьох сторінок, спільного файла стилів і одного файла JavaScript. Тема оформлення перемикається кнопкою і зберігається в браузері. На сторінці квіза чотири запитання з миттєвою перевіркою. Жодна частина не звертається по мережі: весь код працює в браузері.
+      </div>
+    </div>
+    <section class="feedback">
+      <h2>Зворотний зв'язок</h2>
+      <form id="feedbackForm" novalidate>
+        <label>Ім'я
+          <input type="text" id="nameInput" placeholder="Як вас звати">
+        </label>
+        <label>E-mail
+          <input type="email" id="emailInput" placeholder="you@example.com">
+        </label>
+        <label>Повідомлення
+          <textarea id="messageInput" rows="4" placeholder="Ваш коментар"></textarea>
+        </label>
+        <button class="btn" type="submit">Надіслати</button>
+        <p id="formMessage" class="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+  <footer>
+    <div class="contacts">
+      <a href="mailto:student@example.com">student@example.com</a>
+    </div>
+    <p>2026, навчальний проєкт.</p>
+  </footer>
+</body>
+</html>

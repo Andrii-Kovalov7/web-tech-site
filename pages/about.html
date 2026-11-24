@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Про сайт</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <img src="../images/logo.svg" alt="Логотип сайта" class="logo">
+    <nav>
+      <a href="../index.html">Головна</a>
+      <a href="about.html">Про сайт</a>
+      <a href="quiz.html">Квіз</a>
+    </nav>
+    <button id="themeButton" class="btn theme-btn" type="button">Темна тема</button>
+  </header>
+  <main>
+    <h1>Про сайт</h1>
+    <p>Сайт створено в межах курсу вебтехнологій як підсумковий навчальний проєкт. Це статичний сайт: три сторінки, спільний файл стилів і один файл JavaScript без залежностей.</p>
+    <h2>Структура</h2>
+    <p>Головна сторінка містить опис проєкту, картки з розділами і форму зворотного зв'язку. Сторінка про сайт пояснює структуру і технології. Сторінка квіза має чотири запитання з перевіркою відповідей у браузері.</p>
+    <h2>Технології</h2>
+    <p>Розмітку і семантичну структуру зроблено на HTML5. Оформлення зібрано в одному файлі css/style.css: світла і темна палітри, сітка карток, адаптивні правила для вузьких екранів. Тема оформлення перемикається класом dark і зберігається в localStorage браузера. Форму і квіз обслуговує js/main.js.</p>
+    <h2>Перегляд локально</h2>
+    <p>Щоб відкрити сайт на комп'ютері, у папці з файлами виконайте python3 -m http.server 8000 і відкрийте адресу http://localhost:8000.</p>
+  </main>
+  <script src="../js/main.js"></script>
+  <footer>
+    <p>2026, навчальний проєкт.</p>
+  </footer>
+</body>
+</html>
